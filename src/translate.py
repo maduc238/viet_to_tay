@@ -1,5 +1,6 @@
 import csv
 import glob
+from pympler import asizeof
 
 file_paths = glob.glob("dictionary/*.csv")
 
@@ -11,6 +12,8 @@ for file_path in file_paths:
             tieng_viet = row['tieng_viet']
             tieng_tay = row['tieng_tay']
             dictionary[tieng_viet] = tieng_tay
+
+print(f"Dictionary size: {asizeof.asizeof(dictionary)}")
 
 # dict(sorted(dictionary.items(), key=lambda x: len(x[0].split()), reverse=True))
 

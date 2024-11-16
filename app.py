@@ -17,7 +17,7 @@ def send_message():
     message = request.json.get("message")
     if message:
         messages.append({"user": "User", "text": message})
-        messages.append({"user": "Translate tool", "text": translate(message)})
+        messages.append({"user": "Translate", "text": translate(message)})
     return jsonify(messages)
 
 
