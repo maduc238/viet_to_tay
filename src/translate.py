@@ -1,5 +1,6 @@
 import csv
 import glob
+import re
 from pympler import asizeof
 
 file_paths = glob.glob("dictionary/*.csv")
@@ -18,7 +19,7 @@ print(f"Dictionary size: {asizeof.asizeof(dictionary)/1000} KB")
 # dict(sorted(dictionary.items(), key=lambda x: len(x[0].split()), reverse=True))
 
 
-def translate(text):
+def translate_sentence(text):
     translated = []
     is_upper = False
     texts = text.split()
@@ -26,8 +27,13 @@ def translate(text):
 
     while index < len(texts):
         num_word = 3
+        
         while num_word > 0:
             word = ' '.join(texts[index: index+num_word])
+            append_char = ''
+            if len(word) > 0 and not word[-1].isalpha():
+                append_char = word[-1]
+                word = word[:-1]
             if index == 0:
                 if word[0].isupper():
                     word = word[0].lower() + word[1:]
@@ -35,10 +41,10 @@ def translate(text):
 
             search = dictionary.get(word)
             if search:
-                translated.append(search)
+                translated.append(search + append_char)
                 break
             if num_word == 1:
-                translated.append(word)
+                translated.append(word + append_char)
                 break
             num_word -= 1
 
@@ -48,3 +54,15 @@ def translate(text):
     if is_upper:
         result = result[0].upper() + result[1:]
     return result
+
+
+def translate(text):
+    result = []
+    for sen in re.split(r'(?<=[.?!])\s*', text):
+        if len(sen) > 0 and sen[-1] in ['.','?','!']:
+            dot = sen[-1]
+            sen = sen[:-1]
+            result.append(translate_sentence(sen) + dot)
+        else:
+            result.append(translate_sentence(sen))
+    return ' '.join(result)

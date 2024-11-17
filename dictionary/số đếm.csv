@@ -1,25 +1,27 @@
 tieng_viet,tieng_tay
-một,nừng
-hai,soong
-ba,sam
-bốn,sli
-tư,sli
-năm,hả
-sáu,hốc
-bảy,chẹt
-tám,phẹt
-chín,cẩu
-mười,slíp
-mười một,slíp ất
-hai mươi,nhỉ slíp
-một trăm,pác đều
+1,nừng
+2,soong
+3,sam
+4,sli
+5,hả
+6,hốc
+7,chẹt
+8,phẹt
+9,cẩu
+10,slíp
+11,slíp ất
+20,nhỉ slíp
+100,pác nưng
+1000,xiên nưng
+2000,soong xiên
+ngày,vằn
 tháng,bươn
 tháng chạp,bươn lạp
 tháng giêng,bươn chiêng
 tháng mười một,bươn ất
-một trăm,pác nưng
-một nghìn,xiên nưng
-hai nghìn,soong xiên
+năm,pi
+cả năm,khuôp
+đầy năm,khuôp
 một đồng,mưn nưng
 một cái,ăn nưng
 một ít,ỉnh nưng
