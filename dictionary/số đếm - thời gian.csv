@@ -1,8 +1,10 @@
 tieng_viet,tieng_tay
-1,nừng
+0,lình
+1,nưng
 một,đều
 2,soong
 đôi,soong
+cặp đôi,pẻng tài
 3,sam
 4,sli
 5,hả
@@ -12,12 +14,12 @@ một,đều
 9,cẩu
 10,slíp
 11,slíp ất
+11,slíp nhỉ
 20,nhỉ slíp
-trăm,pác
-100,pác nưng
-nghìn,xiên
-1000,xiên nưng
-2000,soong xiên
+100,pác
+1000,xiên
+2000,nhỉ xiên
+vạn,pac
 triệu,tiệu
 nửa,puốn
 rưỡi,puốn
@@ -61,5 +63,9 @@ ngày xưa,pưa đía
 lúc đầu,pưa đú
 ban đầu,pưa đú
 vừa qua,pưa ngòa
-buổi chiều,pưa pài
+buổi,pưa
+trưa,ngài
+chiều,pài
+tối,đăm
+ngoái,quá
 
