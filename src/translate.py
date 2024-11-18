@@ -29,7 +29,7 @@ def translate_sentence(text):
         while num_word > 0:
             word = ' '.join(texts[index: index+num_word])
             append_char = ''
-            if len(word) > 0 and not word[-1].isalpha():
+            if len(word) > 0 and not word[-1].isalpha() and not word[-1].isnumeric():
                 append_char = word[-1]
                 word = word[:-1]
             if index == 0:
