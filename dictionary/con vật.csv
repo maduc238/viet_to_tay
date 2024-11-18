@@ -1,5 +1,7 @@
 tieng_viet,tieng_tay
 con,tua
+con vật,tua cúa
+động vật,tua cúa
 chó,ma
 lợn,mu
 heo,mu
@@ -10,6 +12,7 @@ vịt,pết
 rắn,ngù
 gà trống,cáy reng
 gà mái,cáy mẻ
+mái tơ,khướng
 con bò,tua mò
 heo đực,mu tậc
 heo nái,mu mẻ
@@ -40,6 +43,7 @@ rùa,tấu
 con vắt,tua tảc
 con nhái,tua khuyết
 ếch,cốp
+éch nhái,cốp khuyết
 cào cào,thắc
 châu chấu,luồm
 con cóc,tua pạng pú
@@ -58,7 +62,10 @@ bọ xít,mèng kèng
 giun đất,mềng đươn
 giun,đươn
 chuột,nu
+chuột chù,cà rìa
 khỉ,lình
 dê,bẻ
 quạ,ca
-
+ngựa,mạ
+gián,sláp
+nòng nọc,ruộc

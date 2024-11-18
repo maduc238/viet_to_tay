@@ -14,9 +14,7 @@ for file_path in file_paths:
             tieng_tay = row['tieng_tay']
             dictionary[tieng_viet] = tieng_tay
 
-print(f"Dictionary size: {asizeof.asizeof(dictionary)/1000} KB")
-
-# dict(sorted(dictionary.items(), key=lambda x: len(x[0].split()), reverse=True))
+print(f"Dictionary size {asizeof.asizeof(dictionary)/1000} KB with {len(dictionary)} words")
 
 
 def translate_sentence(text):
