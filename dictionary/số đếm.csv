@@ -1,6 +1,8 @@
 tieng_viet,tieng_tay
 1,nừng
+một,đều
 2,soong
+đôi,soong
 3,sam
 4,sli
 5,hả
@@ -11,10 +13,16 @@ tieng_viet,tieng_tay
 10,slíp
 11,slíp ất
 20,nhỉ slíp
+trăm,pác
 100,pác nưng
+nghìn,xiên
 1000,xiên nưng
 2000,soong xiên
+triệu,tiệu
+nửa,puốn
+rưỡi,puốn
 ngày,vằn
+mấy ngày,kỉ vằn
 tháng,bươn
 tháng chạp,bươn lạp
 tháng giêng,bươn chiêng
@@ -27,5 +35,11 @@ một cái,ăn nưng
 một ít,ỉnh nưng
 lạng,giàng
 quý,quỉ
+quý báu,quỉ pèng
 mã lực,rèng mạ
 khuôn,khon
+thước,xích
+mét,xích
+hết,puộn
+suốt,puộn
+tam giác,sam coóc
