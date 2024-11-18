@@ -1,7 +1,10 @@
 tieng_viet,tieng_tay
 núi,phja
 rừng,khau
-đất,tâm
+đất,tôm
+đất xốp,tôm bông
+đất sét,tôm đeng
+bùn,ra
 mặt trời,tha vằn
 trăng,hai
 mặt trăng,tha hai
@@ -13,6 +16,8 @@ rẫy,rây
 nương,rây
 nước,nặm
 lửa,fay
+ma trơi,fay phi
+khói,vằn
 bạc,ngần
 tiền bạc,ngần
 rơi,tốc
@@ -80,12 +85,13 @@ chảo to,héc vài
 gác sào,các slảo
 sợi cói,khon fục
 ruộng cói,nà fục
+thửa ruộng,lâư nà
 kính,nhạn khỉnh
 kính mắt,nhạn khỉnh
 đường,tàng
 đường xá,tàng
 trên đường,hang tàng
-trong long,mốc phông
+trong lòng,mốc phông
 bể,pé
 hang,tham
 hang động,tham
@@ -99,3 +105,10 @@ quần áo,slửa khóa
 trang phục,slửa khóa
 xáy,trứng
 hàng rào,rược
+trống,tổng
+cổng,tu ảng
+mũ,tù
+thư tình,foong slư
+biển,hải
+mào,hon
+đám,đảm

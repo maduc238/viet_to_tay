@@ -3,10 +3,16 @@ con,tua
 con vật,tua cúa
 động vật,tua cúa
 chó,ma
+chó con,ma eng
+mèo con,mèo eng
 lợn,mu
+lợn con,mu eng
 heo,mu
+heo con,mu eng
 gà,cáy
+gà con,cáy en
 trâu,vài
+nghé,vài eng
 cá,pja
 vịt,pết
 rắn,ngù
@@ -14,6 +20,7 @@ gà trống,cáy reng
 gà mái,cáy mẻ
 mái tơ,khướng
 con bò,tua mò
+con bê,tua mò eng
 heo đực,mu tậc
 heo nái,mu mẻ
 ngỗng,hán
@@ -56,7 +63,6 @@ ong,mèng
 ong mật,mèng thương
 ong vò vẽ,tó
 nhện,xúng xao
-con gián,tua ráp
 bọ chó,mắt ma
 bọ xít,mèng kèng
 giun đất,mềng đươn
@@ -71,3 +77,5 @@ gián,sláp
 nòng nọc,ruộc
 nai,quang
 chim công,quáng quả
+con báo,tua slang
+đom đóm,hinh hỏi
