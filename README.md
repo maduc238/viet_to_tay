@@ -37,5 +37,5 @@ python test.py
 
 ---
 
-Version (beta) 0.5.0
+Version (beta) v0.5.0-rc1
 

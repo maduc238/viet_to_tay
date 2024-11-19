@@ -1,6 +1,6 @@
 tieng_viet,tieng_tay
 ta,hây
-tôi,hây
+tôi,khỏi
 chúng ta,boong hây
 mọi người,bại cần
 cháu,lan
@@ -26,11 +26,14 @@ dượng,sượng
 cậu,khủ
 mợ,mử
 dì,nạ
+chị em,pì noọng
 anh em,pì noọng
 bà con,pì noọng
 em,noọng
 trai,chài
 gái,slao
+con gái,lục chài
+con gái,lục slao
 người,cần
 người bạn,cần pằng dạu
 nhiều người,cần men
@@ -46,8 +49,10 @@ con ruột,lục đeng
 con nuôi,lục liệng
 con dâu,lùa
 con rể,khươi
-con ít,lục hang hỏi
+con cả,lục cốc
+con út,lục lả
 con cuối,lục hang hỏi
+con cháu,lục lan
 thầy mo,lảo thao
 cụ,sựa
 bé,eng
@@ -55,6 +60,7 @@ nhỏ,ỉ
 già,ké
 trẻ,ón
 trẻ con,tua đếch
+trẻ em,tua đếch
 đứa trẻ,tua đếch
 non,ón
 cô dâu,me lùa
@@ -70,3 +76,8 @@ người bán,cần khai
 người kinh,cần keo
 người ngoài,cần bưởng noọc
 người quê ta,cần ti lầu
+ai,cầư
+gia đình,cha ly
+mấy đứa,kỉ tua
+người phục vụ,lục chậư
+mồ côi,lục pjạ
