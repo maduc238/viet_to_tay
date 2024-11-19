@@ -35,6 +35,12 @@ Sau đó chạy file:
 python test.py
 ```
 
+## Tài liệu tham khảo
+
+[1] Bèn, Lương. "Từ điển Tày-Việt, Nxb Đại học Thái Nguyên." (2011).
+[2] Savina, François Marie. *Dictionnaire tày-annamite-français: précédé d'un précis de grammaire tày et suivi d'un vocabulaire français-tày*. Impr. d'Extrême-Orient, 1910.
+[3] Hoàng, Văn Ma, Văn Pảo Lục, and Chí Hoàng. "Từ điển Tày-Nùng-Việt." (2006).
+
 ---
 
 Version (beta) v0.5.0-rc1
