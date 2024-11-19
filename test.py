@@ -1,4 +1,4 @@
-from src.translate import translate
+from src.translate import translate, translate_with_subtitle
 
 print(translate("À ơi em ngủ, ngủ say đi, đợi tí mẹ về!"))
 print(translate("Anh em đâu hết rồi?"))
@@ -14,3 +14,4 @@ print(translate("Trả lời giúp em câu hỏi này. Nó vừa là con bò, v�
 print(translate("Không giữ được ruộng thì có lỗi với tổ tiên"))
 print(translate("Thấy người ta có thì mình ghen tị"))
 print(translate("Tiền bạc coi như đất, cỏ, danh dự đáng nghìn vàng"))
+print(translate("Nước cộng hòa xã hội chủ nghĩa Việt Nam"))

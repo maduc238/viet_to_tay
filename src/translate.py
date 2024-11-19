@@ -19,6 +19,7 @@ print(f"Dictionary size {asizeof.asizeof(dictionary)/1000} KB with {len(dictiona
 
 def translate_sentence(text):
     translated = []
+    word_by_word = {}
     is_upper = False
     texts = text.split()
     index = 0
@@ -39,6 +40,8 @@ def translate_sentence(text):
 
             search = dictionary.get(word)
             if search:
+                if word not in word_by_word:
+                    word_by_word[word] = search
                 translated.append(search + append_char)
                 break
             if num_word == 1:
@@ -51,7 +54,7 @@ def translate_sentence(text):
     result = ' '.join(translated)
     if is_upper:
         result = result[0].upper() + result[1:]
-    return result
+    return result, word_by_word
 
 
 def translate(text):
@@ -60,7 +63,29 @@ def translate(text):
         if len(sen) > 0 and sen[-1] in ['.','?','!']:
             dot = sen[-1]
             sen = sen[:-1]
-            result.append(translate_sentence(sen) + dot)
+            translated, word_by_word = translate_sentence(sen)
+            result.append(translated + dot)
         else:
-            result.append(translate_sentence(sen))
+            translated, word_by_word = translate_sentence(sen)
+            result.append(translated)
     return ' '.join(result)
+
+
+def translate_with_subtitle(text):
+    result = []
+    global_word = dict()
+    for sen in re.split(r'(?<=[.?!])\s*', text):
+        if len(sen) > 0 and sen[-1] in ['.','?','!']:
+            dot = sen[-1]
+            sen = sen[:-1]
+            translated, word_by_word = translate_sentence(sen)
+            result.append(translated + dot)
+        else:
+            translated, word_by_word = translate_sentence(sen)
+            result.append(translated)
+        global_word.update(word_by_word)
+    
+    title_word = ''
+    for word in global_word:
+        title_word += f'{word}->{global_word[word]}; '
+    return ' '.join(result), title_word

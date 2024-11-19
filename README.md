@@ -18,7 +18,7 @@ Hơn nữa, sự phát triển của các ngôn ngữ quốc gia như tiếng Vi
 
 ### Lưu ý
 
-Vì tiếng Tày không có quy chuẩn thống nhất, có nhiều sự khác biệt giữa các vùng miền, nên dự án chỉ tập trung với các từ được công bố trong từ điển Tày-Việt được tham khảo chính để làm chuẩn. Với những từ không tồn tại, bản dịch sẽ mặc định giữ nguyên tiếng Việt để phù hợp cho ngữ cảnh giao tiếp đời sống sinh hoạt của người Tày.
+Vì tiếng Tày không có quy chuẩn thống nhất, có nhiều sự khác biệt giữa các vùng miền, nên dự án chỉ tập trung với các từ được công bố trong từ điển Tày-Việt được tham khảo chính để làm chuẩn. Với những từ không tồn tại, bản dịch sẽ mặc định giữ nguyên tiếng Việt để phù hợp với ngữ cảnh giao tiếp đời sống sinh hoạt của người Tày.
 
 ## Khởi chạy ứng dụng
 
@@ -61,5 +61,5 @@ python test.py
 
 ---
 
-Version (beta) v0.6.0-rc1
+Version (beta) v0.7.1-rc1
 
