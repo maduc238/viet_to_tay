@@ -61,5 +61,5 @@ python test.py
 
 ---
 
-Version (beta) v0.7.1-rc1
+Version (beta) v0.7.2-rc1
 

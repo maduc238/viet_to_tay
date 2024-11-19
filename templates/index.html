@@ -84,10 +84,8 @@
     </style>
     <script>
         function copyToClipboard() {
-            const resultText = document.getElementById("processed-text");
-            navigator.clipboard.writeText(resultText.textContent)
-                .then(() => alert("Copied to clipboard!"))
-                .catch(err => alert("Failed to copy: " + err));
+            const resultText = document.getElementById("translated-text");
+            navigator.clipboard.writeText(resultText.textContent);
         }
     </script>
 </head>
