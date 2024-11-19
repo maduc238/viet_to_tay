@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch tiếng Việt sang tiếng Tày</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6c63ff;
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #6c63ff;
+            color: #fff;
+            padding: 10px 15px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #574dcd;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0ff;
+            border-left: 4px solid #6c63ff;
+            border-radius: 4px;
+            /* font-family: "Courier New", Courier, monospace; */
+            position: relative;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #6c63ff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .copy-btn:hover {
+            background-color: #574dcd;
+        }
+    </style>
+    <script>
+        function copyToClipboard() {
+            const resultText = document.getElementById("processed-text");
+            navigator.clipboard.writeText(resultText.textContent)
+                .then(() => alert("Copied to clipboard!"))
+                .catch(err => alert("Failed to copy: " + err));
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Dịch tiếng Việt sang tiếng Tày</h1>
+    </header>
+    <div class="container">
+        <form method="POST">
+            <label for="input_text">Nhập đoạn văn bảng tiếng Việt cần dịch:</label>
+            <textarea id="input_text" name="input_text" rows="5" placeholder="Nhập đoạn văn của bạn vào đây...">{{ input_text }}</textarea>
+            <button type="submit">Dịch văn bản</button>
+        </form>
+        {% if processed_text %}
+            <div class="result">
+                <h2>Văn bản được dịch:</h2>
+                <p id="processed-text">{{ processed_text }}</p>
+                <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
