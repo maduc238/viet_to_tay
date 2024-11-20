@@ -32,17 +32,13 @@
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
         textarea {
             width: 100%;
             padding: 10px;
             font-size: 1rem;
             border: 1px solid #ccc;
             border-radius: 4px;
+            margin-bottom: 15px;
         }
         button {
             background-color: #6c63ff;
@@ -53,6 +49,7 @@
             border-radius: 4px;
             cursor: pointer;
             transition: background-color 0.3s;
+            margin-top: 10px;
         }
         button:hover {
             background-color: #574dcd;
@@ -83,6 +80,37 @@
         }
     </style>
     <script>
+        let debounceTimeout;
+
+        function debounce(func, delay) {
+            return function (...args) {
+                clearTimeout(debounceTimeout);
+                debounceTimeout = setTimeout(() => func.apply(this, args), delay);
+            };
+        }
+
+        function updateProcessedText() {
+            const inputText = document.getElementById("input_text").value;
+
+            fetch("/process", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ input_text: inputText }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                const translatedText = data.translated_text;
+                const processedText = data.processed_text;
+                document.getElementById("translated-text").textContent = translatedText;
+                document.getElementById("processed-text").textContent = processedText;
+            })
+            .catch(error => console.error("Error:", error));
+        }
+
+        const debouncedUpdate = debounce(updateProcessedText, 1000);
+
         function copyToClipboard() {
             const resultText = document.getElementById("translated-text");
             navigator.clipboard.writeText(resultText.textContent);
@@ -94,24 +122,18 @@
         <h1>Dịch tiếng Việt sang tiếng Tày</h1>
     </header>
     <div class="container">
-        <form method="POST">
-            <label for="input_text">Nhập đoạn văn bảng tiếng Việt cần dịch:</label>
-            <textarea id="input_text" name="input_text" rows="5" placeholder="Nhập đoạn văn của bạn vào đây...">{{ input_text }}</textarea>
-            <button type="submit">Dịch văn bản</button>
-        </form>
-        {% if translated_text %}
-            <div class="result">
-                <h3>Văn bản được dịch:</h3>
-                <p id="translated-text">{{ translated_text }}</p>
-                <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
-            </div>
-        {% endif %}
-        {% if processed_text %}
-            <div class="result">
-                <h3>Các từ được dịch:</h3>
-                <p id="processed-text">{{ processed_text }}</p>
-            </div>
-        {% endif %}
+        <label for="input_text">Nhập đoạn văn bảng tiếng Việt cần dịch:</label>
+        <textarea id="input_text" oninput="debouncedUpdate()" rows="5" placeholder="Nhập đoạn văn của bạn vào đây..."></textarea>
+        <button onclick="updateProcessedText()">Dịch văn bản</button>
+        <div class="result">
+            <h3>Văn bản được dịch:</h3>
+            <p id="translated-text"></p>
+            <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
+        </div>
+        <div class="result">
+            <h3>Các từ được dịch:</h3>
+            <p id="processed-text"></p>
+        </div>
     </div>
 </body>
 </html>

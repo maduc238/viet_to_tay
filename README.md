@@ -57,9 +57,9 @@ python test.py
 
 [2] Savina, François Marie. *Dictionnaire tày-annamite-français: précédé d'un précis de grammaire tày et suivi d'un vocabulaire français-tày*. Impr. d'Extrême-Orient, 1910.
 
-[3] Ma Văn Hoàng, Lục Văn Pảo, and Hoàng Chí. "Từ điển Tày-Nùng-Việt." (2006).
+[3] Hoàng Văn Ma, Lục Văn Pảo, and Hoàng Chí. "Từ điển Tày-Nùng-Việt." (2006).
 
 ---
 
-Version (beta) v0.7.2-rc1
+Version (beta) v0.8.0-rc1
 

@@ -6,13 +6,22 @@ from pympler import asizeof
 file_paths = glob.glob("dictionary/*.csv")
 
 dictionary = {}
-for file_path in file_paths:
-    with open(file_path, mode='r', encoding='utf-8') as csvfile:
+bypass = []
+remove = []
+for filename in file_paths:
+    with open(filename, mode='r', encoding='utf-8') as csvfile:
         csv_reader = csv.DictReader(csvfile)
-        for row in csv_reader:
-            tieng_viet = row['tieng_viet']
-            tieng_tay = row['tieng_tay']
-            dictionary[tieng_viet] = tieng_tay
+        if filename == 'dictionary\\bypass.csv':
+            for row in csv_reader:
+                bypass.append(row['tieng_viet'])
+        elif filename == 'dictionary\\remove.csv':
+            for row in csv_reader:
+                remove.append(row['tieng_viet'])
+        else:
+            for row in csv_reader:
+                tieng_viet = row['tieng_viet']
+                tieng_tay = row['tieng_tay']
+                dictionary[tieng_viet] = tieng_tay
 
 print(f"Dictionary size {asizeof.asizeof(dictionary)/1000} KB with {len(dictionary)} words")
 
@@ -38,6 +47,12 @@ def translate_sentence(text):
                     word = word[0].lower() + word[1:]
                     is_upper = True
 
+            if word in bypass:
+                translated.append(word + append_char)
+                break
+            if word in remove:
+                break
+            
             search = dictionary.get(word)
             if search:
                 if word not in word_by_word:
