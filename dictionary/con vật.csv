@@ -2,8 +2,10 @@ tieng_viet,tieng_tay
 con,tua
 con vật,tua cúa
 động vật,tua cúa
+côn trùng,mật rày
 chó,ma
 chó con,ma eng
+chó săn,ma thấu
 mèo con,mèo eng
 lợn,mu
 lợn con,mu eng
@@ -12,6 +14,8 @@ heo con,mu eng
 gà,cáy
 gà con,cáy en
 trâu,vài
+trâu cái,me vài
+trâu đực,po vài
 nghé,vài eng
 cá,pja
 vịt,pết
@@ -59,9 +63,13 @@ châu chấu,luồm
 con cóc,tua pạng pú
 chuồn chuồn,pị
 muỗi,nhùng
+muỗi vằn,mèng nhùng
 ruồi,mèng
 bướm,pa pỉ
 kiến,mật
+kiến vống,mật phạ
+kiến kim,mật khêm
+kiến ngạt,mật rày
 ong,mèng
 ong mật,mèng thương
 ong vò vẽ,tó
@@ -88,3 +96,6 @@ bắp cày,cap thây
 vượn,căng
 rồng,luồng
 voi,chạng
+chim khuyên,queng quý
+muôm muỗm,luôm
+con lừa,tua lừ

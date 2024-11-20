@@ -1,4 +1,5 @@
 tieng_viet,tieng_tay
+vui,hôn
 vui vẻ,hôn hỉ
 vui sướng,hôn dùng
 vui mừng,hôn dùng
@@ -87,6 +88,8 @@ tròn,mần
 tròn vo,mần léng
 chết,thai
 muốn chết,xa thai
+chết ngoẻo,nhỉa
+chết ngoẻo hết,nhỉa lẹo
 tử,thai
 tử vong,thai
 trên,nưa
@@ -94,7 +97,9 @@ dưới,tẩư
 xa,quây
 gần,xẩư
 thối,mên
+thiu,mên
 hôi,mên
+hôi tanh,mên
 mục,đoóc
 mục nát,đoóc đéc
 tối om,đăm ngùm
@@ -107,6 +112,7 @@ tối sầm,đăm rặc
 dị ứng,mác mán
 thủy đậu,mác nặm
 chửa,mát
+có chửa,mì đang
 nín thở,mặm châư
 lằng nhằng,slằm slì
 sặc,slắc mjặc
@@ -172,11 +178,13 @@ chào đời,tốc fạc
 đoản mệnh,tổn minh
 vấp,tủng
 vướng,tủng
+vướng vào,vặc
 béo,uổn
 mập,uổn
 mê sảng,vang màng
 hoảng hốt,vảng cở
 hoảng sợ,tốc slóe
+hoảng hồn,mao minh
 sợ hãi hùng,lao tốc slóe
 động lòng,tòn slim
 đục,vằm
@@ -268,3 +276,43 @@ gặp may,chặp đây
 gặp rủi,chặp rại
 gặp xui,chặp rại
 tầm tã,chè chè
+bận,nhắng
+inh ỏi,nhắng nhắng
+ầm ầm,nhắng nhắng
+nhọ,nhém
+thẹn,nhẻn
+nhung nhúc,nhúc nhúc
+nhùng nhằng,nhúc nhúc
+rối rắm,nhủng nhảng
+khó khăn,cáo quán
+choáng váng,mao lượt
+phập phồng,mạp mạp
+vô sinh,măn
+sờn,măng
+phai màu,măng
+mới mẻ,mấư tích
+thẫn thờ,mầu muôn
+nườm nượp,lượp lượp
+xanh rờn,kheo lượp lượp
+bị choáng,lượt khửn hua
+chóng mặt,lượt khửn hua
+nguệch ngoạc,lài khoài
+nham nhở,lài mèo
+nhem nhuốc,lài mèo
+hoa hòe,lài luông
+nhá nhem,lài lạng
+nhập nhoạng,lài lạng
+loạn lạc,lào luôn
+làm quần quật,lào lộc
+trôi chảy,làu
+trơn tru,làu
+lưu loát,làu loạt
+cháy,mẩy
+mùi khê,mên mẩy
+mùi cháy,mên mẩy
+mùi khét,mên mẩy
+bị khét,mêm mẩy
+mùi hôi thối,mên nâu
+hôi hám,mên slổm
+mùi hôi hám,mên slổm
+mùi chua,mên slổm

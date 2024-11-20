@@ -12,4 +12,4 @@ def home():
     return render_template("index.html", input_text="", processed_text="")
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=443, ssl_context="adhoc")
