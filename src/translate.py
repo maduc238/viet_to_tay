@@ -11,10 +11,10 @@ remove = []
 for filename in file_paths:
     with open(filename, mode='r', encoding='utf-8') as csvfile:
         csv_reader = csv.DictReader(csvfile)
-        if filename == 'dictionary\\bypass.csv':
+        if 'bypass' in filename:
             for row in csv_reader:
                 bypass.append(row['tieng_viet'])
-        elif filename == 'dictionary\\remove.csv':
+        elif 'remove' in filename:
             for row in csv_reader:
                 remove.append(row['tieng_viet'])
         else:
