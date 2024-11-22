@@ -20,8 +20,12 @@ bố,po
 ông ngoại,ta
 bà,dà
 bà nội,mé
-bà ngoại,tái
-bà góa,da mải
+bà ngoại,me tái
+bà góa,me mải
+bà dì,me na
+vợ lẽ,me na
+vợ kế,me lăng
+vợ cả,me cốc
 chú,chủ
 thím,a lùa
 cô,a
@@ -34,9 +38,15 @@ anh em,pì noọng
 bà con,pì noọng
 em,noọng
 trai,chài
+nam giới,chài
 gái,slao
-con gái,lục chài
+nữ giới,slao
+phụ nữ,me nhình
+đàn bà,me nhình
+con trai,lục chài
 con gái,lục slao
+cô gái,noọng slao
+em gái,noọng slao
 người,cần
 người bạn,cần pằng dạu
 nhiều người,cần men
@@ -70,6 +80,7 @@ non,ón
 cô dâu,me lùa
 nàng dâu,me lùa
 thiếu nữ,slao nóm
+quý cô,nàng
 tổ tiên,cống chỏ
 thằng,hò
 chàng,quan
@@ -88,6 +99,8 @@ người phục vụ,lục chậư
 mồ côi,lục pjạ
 thổ cư,ti rườn
 khách,cần lạ
+khách xa,kình châm
+lữ khách,kình châm
 tướng,tưởng
 vua,vuồng
 hoàng đế,vuồng táy
@@ -105,3 +118,6 @@ kẻ xấu,cần lóa
 người cổ,cần tơi
 địch,slâc
 đầy tớ,khỏi
+thanh niên,báo léo
+nam thanh niên,báo léo
+đàn ông,báo léo
