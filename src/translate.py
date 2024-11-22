@@ -30,6 +30,7 @@ def translate_sentence(text):
     translated = []
     word_by_word = {}
     is_upper = False
+    first_special_char = ''
     texts = text.split()
     index = 0
 
@@ -39,14 +40,23 @@ def translate_sentence(text):
         while num_word > 0:
             word = ' '.join(texts[index: index+num_word])
             append_char = ''
+            special_char = ''
+
             if len(word) > 0 and not word[-1].isalpha() and not word[-1].isnumeric():
                 append_char = word[-1]
                 word = word[:-1]
             if index == 0:
-                if word[0].isupper():
-                    word = word[0].lower() + word[1:]
-                    is_upper = True
+                if len(word) > 0:
+                    if word[0] in ["\"", "'", "("]:
+                        first_special_char = word[0]
+                        word = word[1:]
+                    if word[0].isupper():
+                        word = word[0].lower() + word[1:]
+                        is_upper = True
 
+            if len(word) > 0 and word[0] in ["\"", "'", "("]:
+                special_char = word[0]
+                word = word[1:]
             if word in bypass:
                 translated.append(word + append_char)
                 break
@@ -57,10 +67,10 @@ def translate_sentence(text):
             if search:
                 if word not in word_by_word:
                     word_by_word[word] = search
-                translated.append(search + append_char)
+                translated.append(special_char + search + append_char)
                 break
             if num_word == 1:
-                translated.append(word + append_char)
+                translated.append(special_char + word + append_char)
                 break
             num_word -= 1
 
@@ -68,7 +78,7 @@ def translate_sentence(text):
 
     result = ' '.join(translated)
     if is_upper:
-        result = result[0].upper() + result[1:]
+        result = first_special_char + result[0].upper() + result[1:]
     return result, word_by_word
 
 
