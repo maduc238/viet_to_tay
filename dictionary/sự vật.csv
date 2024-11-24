@@ -1,5 +1,7 @@
 tieng_viet,tieng_tay
 núi,phja
+núi đá,phja
+núi cao,phja
 núi rừng,khau phja
 núi trập trùng,phja típ phja
 rừng,đông
@@ -22,16 +24,12 @@ nương,rây
 nước,nặm
 nước lạnh,nặm cắt
 lửa,fay
-bật lửa,phặt fay
-cái bật lửa,phặt fay
 ma,phi
 ma trơi,fay phi
 khói,vằn fầy
-bạc,ngần
-tiền,ngần
-tiền bạc,ngần chèn
 rơi,tốc
 mây,mền phạ
+đám mây,phả phạ
 dòng,kha
 sông,tả
 suối,khuổi
@@ -46,18 +44,6 @@ rượu,lẩu
 giếng,bó
 đèo,kéo
 đỉnh đèo,ngạm kéo
-dấm,mí
-trà,xà
-đường ăn,thương
-nước đường,nặm thương
-đường trắng,thương khao
-đường phèn,thương kép
-đường cát,thương sla
-mật,thương nặm
-muối,cưa
-mỡ,pjì
-chấm,chẳm
-mắm,bẳm
 cứt,khỉ
 phân,khỉ
 cây,mạy
@@ -89,27 +75,12 @@ bánh trà lam,pẻng kinh
 bột gạo,bưa khẩu
 cám,rjằm
 cám gạo,rjằm khẩu
-lũng,lủng
-cái chum,cang
-dao,pjạ
-dao sắc,pjạ cồm
-dao găm,xảo xính
 sữa,nồm
-giường,chường
-ống thóc,khẩu coóc
 cửa hàng,rườn hàng
-cái ô,cưởng
-chảo,héc
-chảo xào rau,héc phjắc
-chảo to,héc vài
-gác sào,các slảo
-sợi cói,khon fục
 ruộng cói,nà fục
 thửa ruộng,lâư nà
 ruộng bậc thang,nà tốc thắn
 ruộng cao, nà tềnh
-kính,nhạn khỉnh
-kính mắt,nhạn khỉnh
 đường,tàng
 đường xá,tàng
 đường phố,tàng
@@ -120,64 +91,25 @@ bể,pé
 hang,tham
 hang động,tham
 hang lớn,tham luông
-chậu,pừn
-chậu thau,pừn toòng
 cống,to
-cái váy,quen
-áo,slửa
-áo hoa,slửa lài
-áo tang,slửa dáo
-áo cánh,slửa cỏm
-áo bông,slửa mèn
-áo năm thân,slửa nạp
-áo đan,slửa tha thông
-áo xô,slửa pán
-áo vải,slửa phải
-vải vóc,slửa phải
-quần áo,slửa khóa
-quần,khóa
-ống quần,kha khóa
-trang phục,slửa khóa
-phục trang,slửa khóa
 trứng,xáy
 trứng ung,xáy còn
 trứng non,xáy fạng 
-hàng rào,rược
-trống,tổng
-cổng,tu ảng
-mũ,tù
 thư tình,foong slư
 biển,hải
 mào,hon
 đám,đảm
 cánh đồng,tông nà
 đồng lúa,tông nà
-cái muôi,quại
-gác bếp,xá
-lan can,xa làn
-bao tải,xác
-bao tải gạo,xác khẩu slan
-con quay,xáng
 mạng nhện,rằng xao
 tơ nhện,dầư xao
-cái rọ,ràm
-cái rọ mõm,ràm
-chén,răm
 ổ,rằng
 tổ,rằng
-thắt lưng,rặng
 mái hiên,cai
-kim chỉ,khêm
-mũi chỉ,càm khêm
 cửa ngõ,cạm
-bát,pát
 dốc,lính
 hạch,lục nu
-của cải,au cúa
-vàng,kim
-vách đá,đán
-tã,ỏm
-tã lót,ỏm
+vách đá,phja đán
 quê hương,bản cỏn
 đất nước,nặm mường
 xứ sở,nặm mường
@@ -185,30 +117,19 @@ thiên nhiên,ti da
 môi trường,ti da
 nghĩa địa,ti fằn
 địa phương,ti fuông
-chỗ ngồi,ti năng
 giọng,tiểng
-quả cân,tò chăng
 đoạn thẳng,ton dàu
-đũa,thú
-đôi đũa,tôi thú
 lều,thiêng
 rầm,tông
-đuốc,tuẩy
-cái cưa,tuôn
 vũng nước,tuống nặm
 nhà trường,rườn tường
 sàn,chàn
-mâm,bôm
-mâm đồng,bôm toòng
 vùng,búng
 vùng cao,búng slung
 khu vực,mường
 đồng bằng,tông nà
 lưng trời,chang hả
 thơ,lẩu
-thòng lọng,chăng
-dây,thau
-dây xích,chăng
 hơi,châư
 hơi thở,châư
 tắc thở,bắt châư
@@ -217,14 +138,17 @@ rác rưởi,nhẳm nhác
 nhà bên,rườn bưởng
 chuồng,lậu
 tất,mạt
-găng tay,mạt mừ
-cái tăm,mạy chia
 thung lũng,lung
 gầm nhà sàn,lang
 gầm nhà,lang
 chuồng trâu,lang
 chuồng bò,lang
 bữa cơm,tón khẩu
+bữa tối,kin pjầu
+cơm tối,pjầu
+ăn tối,kin pjầu
+bữa trưa,kin ngài
+cơm trưa,ngài
 chữ,slư
 chữ cái,slư me
 chữ nho,slư nam
@@ -248,14 +172,9 @@ trời đất,thiên ti
 thiên địa,thiên ti
 nhà vệ sinh,thiêng khỉ
 bãi,thoi
-nồi,mỏ
-nồi đồng,mỏ toòng
-nồi gang,mỏ khang
 cột nhà,slâu rườn
 truyện,tuyện
 cổ tích,tơi ké
-cái chăn,piếng phà
-tấm chăn,piếng phà
 bánh xe,bảnh xe
 phương bắc,bưởng bắc
 hướng bắc,bưởng bắc
@@ -268,7 +187,6 @@ hướng tây,bưởng tây
 sét,khléc
 trời sét,phạ khléc 
 trời đánh,phạ khléc
-cái thớt,ăn khiêng
 vía,khuăn
 linh hồn,khuăn
 hồn vía,khuăn
@@ -282,10 +200,23 @@ nhà họ,rườn hâu
 nhà người ta,rườn hâu
 nước bọt,nài
 nước dãi,nài slâư
-túi,tây
 nước suối,nặm loong
 lã,cắt
 nước canh,nặm tha
 nước tương,nặm thúa
 đường thẳng,tàng năn
-hoa tai,nậu xu
+bánh giầy,pẻng chuầy
+quỷ,quý
+ma chay,phi slang
+vại,phưởng
+ngọn,pjai
+đỉnh núi,pjai pù
+cuối sàn,pjai chàn
+tâm trí,mốc slẩy
+nhà cửa,rườn lang
+nhà nát,rườn mục
+nhà ngói,rườn ngoạ
+giàn giáo,rườn nọi
+nhà trẻ,rườn đếch
+nhà mẫu giáo,rườn đếch
+nhà gianh,rườn cà

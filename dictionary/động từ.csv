@@ -4,6 +4,7 @@ tiếng,phuối
 tiếng người,hanh cần
 tiếng ai,hanh cần
 ăn,kin
+ăn bữa,kin
 ăn liên tục,quặp quặp
 kiếm ăn,xa kin
 uống,kin
@@ -22,6 +23,7 @@ trồng lúa,năm khẩu
 vun ngô,puồn tấy
 đi,pây
 đi với,pây đuối
+đi đi,pây a
 nghĩ,slưởng
 nghĩ trong bụng,nẳm chang toọng
 ngủ,nòn
@@ -32,7 +34,7 @@ nấu nướng,hung hang
 nấu rượu,riêu lẩu
 nấu cơm trưa,hất ngài
 nấu cơm tối,hất pjầu
-nướng cá,pjỉn pia
+nướng,pjỉn
 mổ,tót
 mổ thịt,khả
 xào rau,xẻo phjắc
@@ -61,9 +63,11 @@ bẫy,téng
 cài bẫy,hảng
 đặt bẫy,hảng cắp
 dắt,chung
-nói,phjuối
-nói to,phjuối rèng
-nói chuyện,phjuối tẻn
+nói,phuối
+nói tiếng,phuối
+dùng tiếng,phuối
+nói to,phuối rèng
+nói chuyện,phuối tẻn
 nói tục,phuối tăn
 nói láo,phuối tăn
 nói ác,phuối rại
@@ -191,6 +195,7 @@ mắng,đá
 mắng nhau,tò tỉu căn
 chửi,tỉu
 chửi nhau,tò tỉu căn
+chửi cho,bjắc hầư
 đánh răng,xá khẻo
 tìm,xa
 tìm kiếm,xa
@@ -319,6 +324,7 @@ ra vào,khảu ốc
 chừa,láp
 chăm sóc,làu lị
 trông nom,làu lị
+trông coi,làu lị
 gạ gẫm,láu
 lừa gạt,láu
 thầm mong,lặc ngoòng
@@ -448,3 +454,29 @@ lăn đùng,ngốn táo
 đổ kềnh,ngốn táo
 thơ thẩn,ngư nga
 la cà,ngư nga
+điên,pền bả
+phát điên,pền bả
+nhổ nước bọt,phí nài
+khạc,phí
+san bằng,phjêng phom
+lạo xạo,phjồ phjồ
+giãy giụa,phộp phộp
+nói ngang,phuối khoang
+phá đám,phuối khoang
+nói phá đám,phuối khoang
+nói ác mồm,phuối mên
+nói kiêu ngạo,phuối mên
+nói cạnh khóe,phuối nhăn
+nói dịu dàng,phuối ón
+nói nhún nhường,phuối ón
+nói vần,phuối pác
+nói gièm pha,phuối pạt
+nói xấu,phuối pạt
+nói thầm,phuối sláp
+nói châm biếm,phuối vẻo
+mắt nháy,tha lắp
+nháy mắt,tha lắp
+đảo ngược,pjẳn thất
+đảo lộn,pjẳn thất
+mếu máo,bắc ngắng
+nhăn nhó,bắc ngắng
