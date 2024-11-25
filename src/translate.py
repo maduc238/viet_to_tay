@@ -4,6 +4,7 @@ import re
 from pympler import asizeof
 
 file_paths = glob.glob("dictionary/*.csv")
+saved_file = "dictionary.csv"
 
 dictionary = {}
 bypass = []
@@ -114,3 +115,10 @@ def translate_with_subtitle(text):
     for word in global_word:
         title_word += f'{word}->{global_word[word]}; '
     return ' '.join(result), title_word
+
+def convert_to_csv():
+    data = sorted(dictionary.items(), key=lambda x: x[0])
+    with open(saved_file, mode="w", encoding="utf-8", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow(["source", "target"])
+        writer.writerows(data)
