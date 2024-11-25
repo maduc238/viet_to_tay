@@ -129,11 +129,15 @@
             <h3>Văn bản được dịch:</h3>
             <p id="translated-text"></p>
             <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
+            <button id="playButton">🔊 Nghe</button>
         </div>
         <div class="result">
             <h3>Các từ được dịch:</h3>
             <p id="processed-text"></p>
         </div>
     </div>
+
+    <audio id="audioPlayer" style="display:none;"></audio>
+    <script src="/static/play_sound.js"></script>
 </body>
 </html>
