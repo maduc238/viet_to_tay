@@ -18,11 +18,13 @@ mặt trăng,tha hai
 vườn,ruôn
 đá,hin
 cục đá,cộc hin
+tảng đá,phjể hin
 ruộng,nà
 rẫy,rây
 nương,rây
 nước,nặm
 nước lạnh,nặm cắt
+nước đá,nặm cắt
 lửa,fay
 ma,phi
 ma trơi,fay phi
@@ -33,6 +35,8 @@ mây,mền phạ
 dòng,kha
 sông,tả
 suối,khuổi
+con suối,khuổi
+ven suối,liệp khuổi
 ao,phai
 ao tù,nặm xăng
 xoáy nước,voằng nặm
@@ -47,12 +51,14 @@ giếng,bó
 cứt,khỉ
 phân,khỉ
 cây,mạy
+cây cối,mạy
 cây đổ,co mạy
 chợ,háng
 nhà,rườn
 nhà sàn,rườn
 ngôi nhà,rườn
 cửa,tu
+cánh cửa,pha tu
 hạt,mặt
 bó,căm
 mạ,chả
@@ -98,6 +104,7 @@ trên đường,hang tàng
 quãng đường,khái tàng
 chặng đường,khái tàng
 trong lòng,mốc phông
+lòng,mốc
 bể,pé
 hang,tham
 hang động,tham
@@ -267,3 +274,11 @@ giấc mơ,đua phăn
 giấc ngủ,đua nòn
 trận ốm,đau khẩy
 vết thương,ròi khát
+mọi thứ,mọi mòn
+vạn vật,mọi mòn
+nước tiểu,nặm neo
+nước tè,nặm neo
+khung cảnh,phuông
+phong cảnh,phuông
+mang cá,cáp ngước
+cái gương,cương
