@@ -12,6 +12,8 @@ chóng mặt,lài tha
 hoa mắt,tha lài
 mù,bjót
 đau,chếp
+nhói đau,chếp rịu
+đau nhói,chếp rịu
 ù tai,xu vjính
 điếc tai,xu nuốc
 ngáp,háo lồm
@@ -36,6 +38,10 @@ ngẩn người,chẳng từ
 im mồm,pjác oôm re
 im ắng,quẹng rực
 im bặt,quẹng rực
+im lìm,quẹng rực
+lặng lẽ,quẹng rực
+lặng im,quẹng rực
+vắng thanh,quẹng rực
 im phắc,quẹng xích
 im phăng phắc,quẹng xích
 thính tai,su rỉnh
@@ -176,6 +182,7 @@ sứt,vao
 ướt,rằm
 ướt sũng,rằm slộp
 ướt nhèm,rằm rẹp
+ẩm ướt,dấu doạt
 ánh,rung
 sáng,rung
 ánh sáng,rung
@@ -374,6 +381,7 @@ sấp ngửa,khoẳm ngai
 xa xăm,vẹn vẹn
 xa xôi,vẹn vẹn
 xa thẳm,vẹn vẹn
+xa vời,vẹn vẹn
 cằn cỗi,ót
 lác đác,phú phí
 se se,rẹt rẹt
@@ -461,6 +469,7 @@ thưa thớt,bang
 hiếm con,lục bang
 nhà ít con,rườn lục bang
 ít con cái,lục bang
+bệnh,khẩy
 bị bệnh,pền khẩy
 mắc bệnh,pền khẩy
 chắc dạ,mốc mắn
@@ -472,6 +481,8 @@ thành nhóm,pền mú
 thành toán,pền mú
 tái nhợt,mướt
 tức giận,nả đăm
+bực tức,nả đăm
+phẫn nộ,nả đăm
 nhút nhát,nả bang
 mặt thất sắc,nả khát
 nghiêm mặt,nả khăm
@@ -487,8 +498,9 @@ nhớp nháp,nảy nượp
 vang rền,nằn nờ
 đằm thắm,nắt nỉu
 thắm thiết,nắt nỉu
+cởi trần,kẻ cang
 trần truồng,ngạm ngạm
-cởi truồng,ngạm ngạm
+cởi truồng,kẻ cụm 
 khỏa thân,ngạm ngạm
 bệnh hen,ngạp mèo
 buồn thiu,ngạu rạu
@@ -628,3 +640,23 @@ lạ thường,lạ nhám
 cảnh giác,chứ slính
 tỉnh táo,slỉnh slạc
 sống ẩn,đỉ dú
+nhẹ nhàng,coi dằng
+thong thả,coi dằng
+từ từ,coi dằng
+sừng sững,tẳng ngộc
+đứng sừng sững,tẳng ngộc
+tái sinh,fan sleng
+hồi sinh,fan sleng
+mọc mầm,fan sleng
+nổ,moòng
+nín khóc,hảy nặc
+ăm ắp,ăng ắc
+rỗng,cuông
+rỗng không,cuông xống
+trống rỗng,cuông xống
+đãng trí,lấư xu
+mất trí,ngậư ngoang
+mất trí nhớ,ngậư ngoang
+quẫn trí,ngậư ngoang
+dột,rua
+rời xa,pây quây

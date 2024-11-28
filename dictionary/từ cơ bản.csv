@@ -1,6 +1,7 @@
 tieng_viet,tieng_tay
 không,bấu
 không biết,bấu chắc
+biết,rụ
 không dám,bấu đi
 không được,bấu mì
 không có,bấu mì
@@ -22,7 +23,10 @@ này,nảy
 cái này,ăn nẩy
 cái khác,ăn đai
 nhớ,chứ
+nhớ đến,chứ thâng
+nhớ lại,chứ thâng
 nhớ nhau,chứ căn
+nhớ đến nhau,chứ thâng căn
 hãy,chứ
 thích,nắt
 được,đảy
@@ -70,6 +74,8 @@ kính thưa,chiềng mừa
 ngay,diền
 ngay lập tức,făn fi
 ngay tức khắc,făn fi
+tức khắc,chích khắc
+tức thì,chích slì
 liền,diền
 kề,tem
 sát,tem
@@ -90,11 +96,13 @@ dù,mái cạ
 cho dù,mái cạ
 dù rằng,mái cạ
 dù cho,mặc cạ
+dẫu cho,mặc cạ
 mặc dù,mái cạ
 vẫn đến,tố mà
 kệ,mặc
 mặc kệ,mặc
 tùy,mặc
+để mặc,kẹ
 ra,oóc
 ra mồ hôi,hứa oóc hăn
 cần thiết,cẩn diếu
@@ -126,6 +134,7 @@ sắp,tộng
 một lúc,lúc nâng
 sang bên cạnh,quá sảng
 còn,nhằng
+vẫn còn,nhằng
 kia,tỉ
 cuối,hang
 lâu,hâng
@@ -162,7 +171,7 @@ may mà,xặc lai
 hơn,quá
 tốt hơn,quá
 hơn nữa,quá ỉ nhít
-đến nơi,rặm rặm
+đến nơi,pây thâng
 trước,cón
 rõ,đây
 rõ ràng,ca điên
@@ -178,6 +187,8 @@ câu hỏi,cằm xam
 trả lời,hòi cằm
 phúc đáp,hòi cằm
 phản hồi,hòi cằm
+nhắn tin,hòi cằm
+báo tin,hòi cằm
 chẳng lẽ,cẳm cạ
 chẳng lẽ là,cẳm cạ
 qua,khảm
@@ -207,6 +218,7 @@ chí,slim
 miễn là,tọ cạ
 chỉ cần,tọ cạ
 thì thôi,toóng xọt
+mà thôi,chầy
 đi trước,pây tốc
 sớm hơn,tốc cón
 nhanh hơn,tốc cón
@@ -304,7 +316,8 @@ câu chuyện,cằm tuyện
 tình tiết,tình tẹ
 rành rẽ,tình tẹ
 cuối cùng,pan choi
-kết thúc,pan
+kết thúc,choi
+cái kết,choi
 hết ngày,vằn pan
 phương,pạng
 tên,ten
@@ -319,6 +332,7 @@ cơ đấy,them ớ
 đâu nhé,náo vớ
 đâu mà,náo vẩy
 tính đến,tỉnh sló
+mỗi,mọi
 mỗi thứ,mọi
 một tý,mòn ý
 về sau,mừa nả
@@ -347,7 +361,8 @@ viện cớ,tả là xỉ
 lấy lý do,tả là xỉ
 đằng hắng,e hèm
 êm ru,ỏn loóc
-nguội,dên
+nguội,quá dai
+lạnh dần,quá dai
 rét,dên
 ấy đấy,dế nỏ
 như thế,dè
@@ -412,6 +427,7 @@ nói không nghe,cạ bấu tinh
 ra ngoài,oóc noọc
 ra đường,oóc tàng
 tưởng rằng,ngơ ca
+tưởng là,ngơ ca
 cho rằng,ngơ ca
 thế nào,pền rừ
 làm thế nào,pền rừ
@@ -430,6 +446,7 @@ một đám,phài nâng
 là là,pháng pháng
 sai trái,phít xá
 lầm lỗi,phít xá
+đã sai,phít xá
 sánh đôi,phướng lứa
 sao được,rừ đảy
 so,pỉ
@@ -491,6 +508,7 @@ khớp nhau,tò tầư
 tạo nên,pền
 tạo thành,pền
 thành,pền
+thành ra,pền
 tình bạn bè,điếp pằng dạu
 tình bạn,điếp pằng dạu
 trở thành,pền
@@ -513,3 +531,21 @@ nghề,thư
 làm nghề,thư
 nghề làm,thư
 gương mẫu,hêt cón
+trái lại,fan tao
+đỡ rồi,nào đây dá
+tiếng động,moòng
+trên không trung,chang hả
+giữa không trung,chang hả
+trên trời,chang hả
+giữa trời,chang hả
+liệu chừng,ấn chí
+bộ,cộ
+gốc gác,cốc co
+tiếng vọng,coỏng
+đôi khi,mì pày
+khi,pưa
+lúc,pưa
+thuở,pưa
+ngay khi,pưa
+ngay cả khi,pưa
+không bằng,bấu táy

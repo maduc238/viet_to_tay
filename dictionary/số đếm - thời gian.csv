@@ -1,41 +1,43 @@
 tieng_viet,tieng_tay
-0,lình
-1,nưng
+số không,lình
+số một,nưng
 một,đều
 nhất,ết
 thứ nhất,tai ết
-2,soong
+số hai,soong
 hai,soong
 nhị,soong
 đôi,soong
 cặp đôi,pẻng tài
-3,sam
+số ba,sam
 ba,sam
 tam,sam
-4,sli
+số bốn,sli
 bốn,sli
 tứ,sli
 tư,sli
-5,hả
-6,hốc
+số năm,hả
+số sáu,hốc
 sáu,hốc
-7,chẹt
+số bảy,chẹt
 bảy,chẹt
-8,phẹt
+số tám,phẹt
 tám,phẹt
-9,cẩu
+số chín,cẩu
 chín,slíp
-10,slíp
+số mười,slíp
 mười,slíp
 chục,slíp
-11,slíp ết
-11,slíp nhỉ
-20,nhỉ slíp
-100,pác
+số mười một,slíp ết
+mười một,slíp ết
+số mười hai,slíp nhỉ
+mười hai,slíp nhỉ
+hai mươi,nhỉ slíp
+một trăm,pác
 trăm,pác
-1000,xiên
+một nghìn,xiên
 nghìn,xiên
-2000,nhỉ xiên
+hai nghìn,nhỉ xiên
 vạn,pac
 triệu,tiệu
 nửa,puốn

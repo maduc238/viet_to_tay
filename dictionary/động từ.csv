@@ -76,6 +76,7 @@ nói lắp,phuối tủng
 bàn chuyện,phuối tẻn
 buôn chuyện,phuối tẻn
 cười,khua
+nụ cười,khua
 sinh,sleng
 sinh đẻ,sleng
 mở,khay
@@ -114,6 +115,7 @@ phơi đồ,phjác slửa
 bắc thang,các đuây
 gặp,chập
 gặp nhau,chập căn
+đối mặt,chập nả
 hòa làm một,tò cáp
 cắn,khốp
 gặm,cắt
@@ -139,6 +141,7 @@ thấy,hăn
 bỗng,nhằm nhoa
 bỗng thấy,nhằm nhoa
 bước đi,càm pây
+bước chân,càm kha
 nôn,rạc
 mửa,rạc
 đành đạch,rat rạt
@@ -340,6 +343,7 @@ về nhà,mừa rườn
 cứ trồng,cuốn năm
 thử,slứ
 hỏi,slam
+tự hỏi,slam
 lặn,lắn
 buông xuống,lắn
 dần buông xuống,lắn
@@ -433,6 +437,8 @@ giàn giụa,dết dăng
 thòng lòng,dầư doang
 vươn vai,diết chạn
 trợn mắt,khên tha
+mắt trợn,tha cượn
+trợn trừng,cượn mjạp
 cố tính,khên tha
 cố ý,khên tha
 chiếm đoạt,kin
@@ -493,8 +499,8 @@ nhăn nhó,bắc ngắng
 gánh,háp
 cãi cọ,quá xá
 xích mích,quá xá
-quán xuyến,quản
-quán xuyến việc,quản
+quán xuyến,pua pẳn
+quán xuyến việc,pua pẳn
 xoáy,quẳn
 cuộn,quẳn
 cuộn sóng,quẳn
@@ -513,6 +519,7 @@ cười mừng,khua phằng
 cười đùa,khua khước
 cười mỉa,khua slổm
 cười mỉm,khua vân
+mỉm cười,nhúm khua
 chăn nuôi,khun liệng
 bới,khuế
 làm nũng,hết ỏn
@@ -606,7 +613,39 @@ không khiến,bấu vàn
 trú,đỉ
 mang về,thư mừa
 mang đến,thư mừa
+mang lại,thư mừa
 mang thai,pà lục
 phá thai,thoóc lục
 thu thập,slau slặp
 sưu tầm,slau slặp
+ngại ngùng,dáp dương
+ngại,dáp dương
+phàn nàn,fàn lào
+cách ly,kéc lé
+khai phá,kẻ nà
+khai hoang,kẻ nà
+khai khẩn,kẻ nà
+phục vụ,pua pẳn
+ra đi,tứn đang
+ghét,kẻt
+chao lượn,chiều
+bay lượn,chiều
+xỏ lá,chiểu
+chơi đểu,chiểu
+rỉa,chỉm
+tắm,áp
+tắm rửa,áp đang
+phối giống,au làng
+lấy giống,au làng
+hóng mát,au lường
+ho,ay
+ho khan,ay lồm
+khom lưng,coòng co
+lục lọi,cộn
+động đậy,cựa
+hơi tí,cựa ỉ
+khóc nhè,cò kè
+mít ướt,cò kè
+xúm lại,tom
+vây lại,tom
+thăm,dương
