@@ -1,14 +1,19 @@
 import csv
 import glob
 import re
+import pickle
+import bz2
 from pympler import asizeof
 
 file_paths = glob.glob("dictionary/*.csv")
-saved_file = "dictionary.csv"
 
 dictionary = {}
 bypass = []
 remove = []
+
+with bz2.BZ2File("dictionary.pkl.bz2", "rb") as file:
+    dictionary = pickle.load(file)
+
 for filename in file_paths:
     with open(filename, mode='r', encoding='utf-8') as csvfile:
         csv_reader = csv.DictReader(csvfile)
@@ -18,11 +23,6 @@ for filename in file_paths:
         elif 'remove' in filename:
             for row in csv_reader:
                 remove.append(row['tieng_viet'])
-        else:
-            for row in csv_reader:
-                tieng_viet = row['tieng_viet']
-                tieng_tay = row['tieng_tay']
-                dictionary[tieng_viet] = tieng_tay
 
 print(f"Dictionary size {asizeof.asizeof(dictionary)/1000} KB with {len(dictionary)} words")
 
@@ -122,3 +122,7 @@ def convert_to_csv():
         writer = csv.writer(file)
         writer.writerow(["source", "target"])
         writer.writerows(data)
+
+def save_dict():
+    with bz2.BZ2File("dictionary.pkl.bz2", "wb") as file:
+        pickle.dump(dictionary, file)

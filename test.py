@@ -1,4 +1,4 @@
-from src.translate import translate, convert_to_csv
+from src.translate import translate, convert_to_csv, save_dict
 
 print(translate("À ơi em ngủ, ngủ say đi, đợi tí mẹ về!"))
 print(translate("Anh em đâu hết rồi?"))
@@ -17,3 +17,4 @@ print(translate("Tiền bạc coi như đất, cỏ, danh dự đáng nghìn và
 print(translate("Nước cộng hòa xã hội chủ nghĩa Việt Nam"))
 
 # convert_to_csv()
+# save_dict()
