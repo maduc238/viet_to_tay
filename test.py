@@ -16,5 +16,4 @@ print(translate("Thấy người ta có thì mình ghen tị"))
 print(translate("Tiền bạc coi như đất, cỏ, danh dự đáng nghìn vàng"))
 print(translate("Nước cộng hòa xã hội chủ nghĩa Việt Nam"))
 
-# convert_to_csv()
-# save_dict()
+save_dict()

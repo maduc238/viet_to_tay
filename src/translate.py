@@ -116,7 +116,7 @@ def translate_with_subtitle(text):
         title_word += f'{word}->{global_word[word]}; '
     return ' '.join(result), title_word
 
-def convert_to_csv():
+def convert_to_csv(saved_file):
     data = sorted(dictionary.items(), key=lambda x: x[0])
     with open(saved_file, mode="w", encoding="utf-8", newline="") as file:
         writer = csv.writer(file)
@@ -124,5 +124,19 @@ def convert_to_csv():
         writer.writerows(data)
 
 def save_dict():
+    dictionary = {}
+    for filename in file_paths:
+        with open(filename, mode='r', encoding='utf-8') as csvfile:
+            csv_reader = csv.DictReader(csvfile)
+            if 'bypass' in filename:
+                pass
+            elif 'remove' in filename:
+                pass
+            else:
+                for row in csv_reader:
+                    tieng_viet = row['tieng_viet']
+                    tieng_tay = row['tieng_tay']
+                    dictionary[tieng_viet] = tieng_tay
+
     with bz2.BZ2File("dictionary.pkl.bz2", "wb") as file:
         pickle.dump(dictionary, file)
