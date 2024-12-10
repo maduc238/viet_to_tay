@@ -64,6 +64,12 @@ def translate_sentence(text):
             if word in remove:
                 break
             
+            if word.isnumeric():
+                translated_num = translate_number(word)
+                if word not in word_by_word:
+                    word_by_word[word] = translated_num
+                translated.append(special_char + translated_num + append_char)
+                break
             search = dictionary.get(word)
             if search:
                 if word not in word_by_word:
@@ -115,6 +121,51 @@ def translate_with_subtitle(text):
     for word in global_word:
         title_word += f'{word}->{global_word[word]}; '
     return ' '.join(result), title_word
+
+num_text = ["lình", "đều", "soong", "sam", "sli", "hả", "hốc", "chẹt", "phẹt", "cẩu"]
+num_text_2 = ["", "ết", "nhỉ", "sam", "sli", "hả", "hốc", "chẹt", "phẹt", "cẩu"]
+num_text_3 = ["", "", "nhỉ", "sam", "sli", "hả", "hốc", "chẹt", "phẹt", "cẩu"]
+
+def translate_number(number):
+    number = int(number)
+    if number < 0:
+        return str(number)
+    number = str(number)
+    if len(number) == 1:
+        return num_text[int(number)]
+    elif len(number) == 2:
+        return translate_number_2(number)
+    elif len(number) == 3:
+        return translate_number_3(number)
+    else:
+        return number
+    
+def translate_number_2(number):
+    result = []
+    if number[0] == '1':
+        result.append("slíp")
+        result.append(num_text_2[int(number[1])])
+    elif number[1] == '0':
+        result.append(num_text_3[int(number[0])])
+        result.append("slíp")
+    else:
+        result.append(num_text_2[int(number[0])])
+        result.append("slíp")
+        result.append(num_text[int(number[1])])
+    return ' '.join(result)
+
+def translate_number_3(number):
+    result = []
+    result.append(num_text_3[int(number[0])])
+    result.append("pác")
+    if number[2] == '0':
+        result.append(num_text_2[int(number[1])])
+    elif number[1] == '0':
+        result.append("lình")
+        result.append(num_text_2[int(number[2])])
+    else:
+        result.append(translate_number_2(number[1:]))
+    return ' '.join(result)
 
 def convert_to_csv(saved_file):
     data = sorted(dictionary.items(), key=lambda x: x[0])

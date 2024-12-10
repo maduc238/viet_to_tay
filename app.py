@@ -5,6 +5,8 @@ import io
 
 app = Flask(__name__)
 
+MAX_LENGTH = 5000
+
 @app.route("/", methods=["GET"])
 def home():
     return render_template("index.html")
@@ -13,6 +15,8 @@ def home():
 def process():
     data = request.json
     input_text = data.get("input_text", "")
+    if len(input_text) > MAX_LENGTH:
+        input_text = ""
     translated_text, processed_text = translate_with_subtitle(input_text)
     return jsonify({"processed_text": processed_text, "translated_text": translated_text})
 
