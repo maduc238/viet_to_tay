@@ -145,13 +145,10 @@ def translate_number_2(number):
     if number[0] == '1':
         result.append("slíp")
         result.append(num_text_2[int(number[1])])
-    elif number[1] == '0':
-        result.append(num_text_3[int(number[0])])
-        result.append("slíp")
     else:
         result.append(num_text_2[int(number[0])])
         result.append("slíp")
-        result.append(num_text[int(number[1])])
+        result.append(num_text_2[int(number[1])])
     return ' '.join(result)
 
 def translate_number_3(number):
