@@ -3,6 +3,7 @@ import glob
 import re
 import pickle
 import bz2
+import unicodedata
 from pympler import asizeof
 
 file_paths = glob.glob("dictionary/*.csv")
@@ -163,6 +164,11 @@ def translate_number_3(number):
     else:
         result.append(translate_number_2(number[1:]))
     return ' '.join(result)
+
+def remove_vietnamese_accents(text):
+    normalized_text = unicodedata.normalize('NFD', text)
+    no_accents = ''.join([c for c in normalized_text if unicodedata.category(c) != 'Mn'])
+    return unicodedata.normalize('NFC', no_accents)
 
 def convert_to_csv(saved_file):
     data = sorted(dictionary.items(), key=lambda x: x[0])

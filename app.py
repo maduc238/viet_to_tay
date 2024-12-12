@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify, send_file
-from src.translate import translate_with_subtitle
+from src.translate import translate_with_subtitle, remove_vietnamese_accents
 from gtts import gTTS
 from threading import Thread
 import io
@@ -18,7 +18,11 @@ def process():
     input_text = data.get("input_text", "")
     if len(input_text) > MAX_LENGTH:
         input_text = ""
-    translated_text, processed_text = translate_with_subtitle(input_text)
+    if len(input_text) > 0:
+        print(remove_vietnamese_accents(input_text))
+        translated_text, processed_text = translate_with_subtitle(input_text)
+    else:
+        translated_text, processed_text = None, None
     return jsonify({"processed_text": processed_text, "translated_text": translated_text})
 
 @app.route('/speak', methods=['POST'])
