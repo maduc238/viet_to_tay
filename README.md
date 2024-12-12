@@ -23,7 +23,7 @@ Vì tiếng Tày không có quy chuẩn thống nhất, có nhiều sự khác b
 ## Khởi chạy ứng dụng
 
 ```commandline
-python app.py
+docker-compose up -d
 ```
 
 Sau khi khởi động, ứng dụng sẽ tạo một web server có đoạn chat riêng tại địa chỉ http://127.0.0.1:5000 (mặc định của Flask):
@@ -61,5 +61,5 @@ python test.py
 
 ---
 
-Version (beta) v0.11.0-rc2
+Version (beta) v0.12.0-rc0
 
