@@ -116,6 +116,21 @@
             const resultText = document.getElementById("translated-text");
             navigator.clipboard.writeText(resultText.textContent);
         }
+
+        function clearText() {
+            document.getElementById('input_text').value = '';
+            updateProcessedText();
+        }
+
+        async function pasteFromClipboard() {
+            try {
+                const text = await navigator.clipboard.readText();
+                document.getElementById('input_text').value = text;
+                updateProcessedText();
+            } catch (err) {
+                console.error('Không thể dán nội dung từ clipboard:', err);
+            }
+        }
     </script>
 </head>
 <body>
@@ -126,6 +141,8 @@
         <label for="input_text">Nhập đoạn văn bảng tiếng Việt cần dịch:</label>
         <textarea id="input_text" oninput="debouncedUpdate()" rows="5" placeholder="Nhập đoạn văn của bạn vào đây..."></textarea>
         <button onclick="updateProcessedText()">Dịch văn bản</button>
+        <button onclick="pasteFromClipboard()">Paste từ Clipboard</button>
+        <button onclick="clearText()">Xóa nội dung</button>
         <div class="result">
             <h3>Văn bản được dịch:</h3>
             <p id="translated-text"></p>
