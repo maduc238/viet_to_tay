@@ -19,7 +19,7 @@ def process():
     if len(input_text) > MAX_LENGTH:
         input_text = ""
     if len(input_text) > 0:
-        print(remove_vietnamese_accents(input_text))
+        # print(remove_vietnamese_accents(input_text))
         translated_text, processed_text = translate_with_subtitle(input_text)
     else:
         translated_text, processed_text = None, None

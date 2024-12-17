@@ -110,7 +110,7 @@
             .catch(error => console.error("Error:", error));
         }
 
-        const debouncedUpdate = debounce(updateProcessedText, 1000);
+        const debouncedUpdate = debounce(updateProcessedText, 100);
 
         function copyToClipboard() {
             const resultText = document.getElementById("translated-text");
