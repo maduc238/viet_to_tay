@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, jsonify, send_file
 from src.translate import translate_with_subtitle, remove_vietnamese_accents
 from gtts import gTTS
-from threading import Thread
 import io
 
 app = Flask(__name__)
@@ -38,11 +37,4 @@ def speak():
     return send_file(audio_stream, mimetype='audio/mpeg', as_attachment=False, download_name="output.mp3")
 
 if __name__ == "__main__":
-    def run_http():
-        app.run(host='0.0.0.0', port=80)
-
-    def run_https():
-        app.run(host='0.0.0.0', port=443, ssl_context='adhoc')
-
-    Thread(target=run_http).start()
-    Thread(target=run_https).start()
+    app.run()

@@ -22,13 +22,98 @@ Vì tiếng Tày không có quy chuẩn thống nhất, có nhiều sự khác b
 
 ## Khởi chạy ứng dụng
 
+### Chạy ứng dụng bằng gunicorn và nginx
+
+Ban đầu chạy bằng `gunicorn` để mở ứng dụng trên cổng 8000.
+
 ```commandline
-docker-compose up -d
+gunicorn --bind 127.0.0.1:8000 wsgi:app
 ```
 
-Sau khi khởi động, ứng dụng sẽ tạo một web server có đoạn chat riêng tại địa chỉ http://127.0.0.1:5000 (mặc định của Flask):
+Sau khi khởi động, ứng dụng sẽ tạo một web server có đoạn chat riêng tại địa chỉ http://127.0.0.1:8000 (mặc định của Flask):
 
 ![img.png](pics/img.png)
+
+Tiếp theo cấu hình `nginx`.
+
+```commandline
+sudo vim /etc/nginx/sites-available/myapp
+```
+
+Thêm nội dung sau (với *yourdomain.com* là tên miền của trang web đang cần được triển khai):
+
+```
+server {
+    listen 80;
+    server_name yourdomain.com www.yourdomain.com;
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+Lưu lại và liên kết cấu hình:
+
+```commandline
+sudo ln -s /etc/nginx/sites-available/myapp /etc/nginx/sites-enabled
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+### Tạo certificate và chạy ứng dụng trên HTTPS
+
+Cài đặt Certbot:
+
+```commandline
+sudo apt update
+sudo apt install certbot python3-certbot-nginx
+```
+
+Lấy chứng chỉ SSL:
+
+```commandline
+sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+```
+
+Kiểm tra cấu hình HTTPS:
+
+```commandline
+sudo systemctl reload nginx
+```
+
+Sau đó tiếp tục sửa file `/etc/nginx/sites-available/myapp` như bước trên (với *yourdomain.com* là tên miền của trang web đang cần được triển khai) rồi thêm vào dòng:
+
+```
+
+server {
+    listen 443 ssl;
+    server_name yourdomain.com www.yourdomain.com;
+
+    ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem;
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+Rồi làm lại bước tương tự để liên kết với cấu hình mới:
+
+```commandline
+sudo ln -s /etc/nginx/sites-available/myapp /etc/nginx/sites-enabled
+sudo nginx -t
+sudo systemctl reload nginx
+```
 
 ## Dành cho nhà phát triển
 
@@ -61,5 +146,5 @@ python test.py
 
 ---
 
-Version (beta) v0.13.0-rc1
+Version 1.0.0
 
