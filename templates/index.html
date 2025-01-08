@@ -79,6 +79,18 @@
         .copy-btn:hover {
             background-color: #574dcd;
         }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            padding: 10px;
+            background-color: #f4f4f9;
+            line-height: 1.6;
+        }
+        footer p {
+            margin: 5px 0;
+        }
     </style>
     <script>
         let debounceTimeout;
@@ -154,7 +166,10 @@
             <p id="processed-text"></p>
         </div>
     </div>
-
+    <footer>
+        <p>Kích thước từ điển: 5760 từ, cụm từ.</p>
+        <p>Phiên bản ứng dụng: 1.1.0 | © 2025</p>
+    </footer>
     <audio id="audioPlayer" style="display:none;"></audio>
     <script src="/static/play_sound.js"></script>
 </body>

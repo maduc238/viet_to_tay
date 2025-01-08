@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify, send_file
-from src.translate import translate_with_subtitle, remove_vietnamese_accents
+from src.translate import translate_with_subtitle, get_dict_size
 from gtts import gTTS
 import io
 

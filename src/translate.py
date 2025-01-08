@@ -25,8 +25,12 @@ for filename in file_paths:
             for row in csv_reader:
                 remove.append(row['tieng_viet'])
 
-print(f"Dictionary size {asizeof.asizeof(dictionary)/1000} KB with {len(dictionary)} words")
+DICTIONARY_SIZE = len(dictionary)
 
+print(f"Dictionary size {asizeof.asizeof(dictionary)/1000000} MB with {DICTIONARY_SIZE} words")
+
+def get_dict_size():
+    return DICTIONARY_SIZE
 
 def translate_sentence(text):
     translated = []
@@ -176,21 +180,3 @@ def convert_to_csv(saved_file):
         writer = csv.writer(file)
         writer.writerow(["source", "target"])
         writer.writerows(data)
-
-def save_dict():
-    dictionary = {}
-    for filename in file_paths:
-        with open(filename, mode='r', encoding='utf-8') as csvfile:
-            csv_reader = csv.DictReader(csvfile)
-            if 'bypass' in filename:
-                pass
-            elif 'remove' in filename:
-                pass
-            else:
-                for row in csv_reader:
-                    tieng_viet = row['tieng_viet']
-                    tieng_tay = row['tieng_tay']
-                    dictionary[tieng_viet] = tieng_tay
-
-    with bz2.BZ2File("dictionary.pkl.bz2", "wb") as file:
-        pickle.dump(dictionary, file)
