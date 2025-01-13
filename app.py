@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify, send_file
-from src.translate import translate_with_subtitle, get_dict_size
+from src.translate import translate, translate_with_subtitle, get_dict_size
 from gtts import gTTS
 import io
 
@@ -35,6 +35,22 @@ def speak():
     audio_stream.seek(0)
     
     return send_file(audio_stream, mimetype='audio/mpeg', as_attachment=False, download_name="output.mp3")
+
+@app.route('/api/translate', methods=['POST'])
+def transform_text():
+    try:
+        data = request.get_json()
+        if not data or 'message' not in data:
+            return jsonify({'error': 'Invalid input, message is required'}), 400
+
+        input_text = data['message']
+
+        translated_text = translate(input_text)
+
+        return jsonify({'translated': translated_text})
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 if __name__ == "__main__":
     app.run()

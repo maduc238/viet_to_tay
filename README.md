@@ -136,6 +136,16 @@ Sau đó chạy file:
 python test.py
 ```
 
+### Gọi API request
+
+Điền nội dung cần dịch vào trường `"message"` trong API POST như sau:
+
+```commandLine
+curl -X POST https://<address>/api/translate -H "Content-Type: application/json" -d '{"message": "Xin chào anh em"}'
+```
+
+Kết quả trả về trong trường `"translated"`
+
 ## Tài liệu tham khảo
 
 [1] Bèn, Lương. "Từ điển Tày-Việt, Nxb Đại học Thái Nguyên." (2011).
@@ -146,4 +156,4 @@ python test.py
 
 ---
 
-Version 1.1.0
+Version 1.2.0
